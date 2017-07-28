@@ -1,0 +1,30 @@
+{
+  "name": "validations",
+  "version": "0.0.1",
+  "main": "./dist/index.js"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "mkdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run init",
+	"build": "babel src -d dist --presets es2015"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyody/validations.git"
+  },
+  "author": "Wesley <wesleyody@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wesleyody/validations/issues"
+  },
+  "homepage": "https://github.com/wesleyody/validations#readme",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
