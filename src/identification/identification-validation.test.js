@@ -17,19 +17,8 @@ describe( "identification/identification-validation", () => {
         it( "deve retornar null", () => {
             const validator = IdentificationValidation( "xxx" );
             console.log( validator );
-            expect( validator ).to.be.empty;
+            expect( validator ).to.be.null;
         });
     });
 
-    describe( "deve validar um CPF", () => {
-        const value = "34513872713";
-        const validator = IdentificationValidation( "pt-BR" );
-        expect( validator.isSSNValid( value ) ).to.be.equal( new IdentificationValidationPtBR().isSSNValid( value ) );
-    });
-
-    describe( "deve validar um CNPJ", () => {
-        const value = "39621351000155";
-        const validator = IdentificationValidation( "pt-BR" );
-        expect( validator.isEINValid( value ) ).to.be.equal( new IdentificationValidationPtBR().isEINValid( value ) );
-    });
 });
