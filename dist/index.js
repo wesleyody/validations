@@ -4,14 +4,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _identificationValidation = require("./identification-validation");
+var _identificationValidation = require("./identification/identification-validation");
 
-Object.keys(_identificationValidation).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _identificationValidation[key];
-    }
-  });
+Object.defineProperty(exports, "IdentificationValidation", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_identificationValidation).default;
+  }
 });
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

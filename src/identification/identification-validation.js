@@ -8,20 +8,10 @@ class IdentificationValidationFactory {
     constructor ( locale ) {
         switch ( locale ) {
             case "pt-BR":
-                this.validator = new IdentificationValidationPtBR();
-                break;
+                return new IdentificationValidationPtBR();
             default:
-                this.validator = null;
-                break;
+                return;
         }
-    }
-
-    isSSNValid ( value ) {
-        return this.validator.isSSNValid( value );
-    }
-
-    isEINValid ( value ) {
-        return this.validator.isEINValid( value );
     }
 
 }
