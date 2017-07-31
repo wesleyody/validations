@@ -1,30 +1,4 @@
-const IdentificationValidation = locale => new IdentificationValidationFactory( locale );
-export default IdentificationValidation;
-
-class IdentificationValidationFactory {
-
-    constructor ( locale ) {
-        switch ( locale ) {
-            case "pt":
-                this.validator = new IdentificationValidationPtBR();
-                break;
-            default:
-                this.validator = null;
-                break;
-        }
-    }
-
-    isSSNValid ( value ) {
-        return this.validator.isSSNValid( value );
-    }
-
-    isEINValid ( value ) {
-        return this.validator.isEINValid( value );
-    }
-
-}
-
-class IdentificationValidationPtBR {
+export default class IdentificationValidationPtBR {
 
     isSSNValid ( value ) {
         // Regexes CPF

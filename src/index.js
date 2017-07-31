@@ -1,1 +1,1 @@
-export * from "./identification-validation";
+export { default as IdentificationValidation } from "./identification/identification-validation";
