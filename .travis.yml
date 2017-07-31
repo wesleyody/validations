@@ -1,10 +1,13 @@
 language: node_js
 node_js:
-- "7"
-
+- '7'
 deploy:
   provider: npm
-  email: "wesleyody@gmail.com"
+  email: wesleyody@gmail.com
   api_key: "${API_KEY}"
   on:
     tags: true
+env:
+  global:
+    # api_key
+    secure: VDKvPweyFWGh1Di7jOX3wOjHfC1wsfnfBBhyh1ocxaWdaSZjWGYpj4PvHCuD9pznT1m0UoK9iEO93NJ5A8nsTIBfdMFv5+vTtB0QSqxSFHq8WLf6dvx5uNRodq4JXvXN9rKdxBWib6kuP1Qt3mg4B0Aas2rxFhai92SGU6gdlPpcX6JxZczXjUMJMJ0dzwOF8bGkCl4G4Log9zBaJy3y6pRHuX+iyjN/uYE5VrvSKbxqtZXELr4Sswa4/U4mEWQHx1H6LEC3wQ1EHxka01K1aeEGu7P9j6zYDO6e8TmQlNLJCR51N+KS3TJivP+4ZpRxZVt2useBEl+NOzdKqeyRJtYk1MbIzPZ9G+Y3PcjwBZsYwvayyOn+o/xSxypPmvYGe1n9cawB5cMNBW9To0RyHfoLv3k+TUJPhd3FriGniKih23OW7a/PaHV0QBOhkTDbM3fl5A2cmm4HyZDKlaqug3chqTsLmrdM/BCnlpC23l2qoY8S7XS3oiyIAeba7OZaznwVYk+aKsmQzbVmBllJtr1g9zxqiMFvvFmPlzkU0Ljt1M4HnVRcdaAFQqwcEPKs8/re9qAiGWBJeCCuW9skTOiCPc1hWZ5SbHH7wv+S+uG2D36qXeOczEfhTpkNGaszTRuL6G3lj2fczJ+icHogLv5b7fEnw8H+c0zyO+GuHdU=
