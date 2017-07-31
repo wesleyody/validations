@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- "7"
+
+deploy:
+  provider: npm
+  email: "wesleyody@gmail.com"
+  api_key: "${API_KEY}"
+  on:
+    tags: true
