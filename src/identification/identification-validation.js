@@ -8,6 +8,9 @@ const IdentificationValidationFactory = locale => {
         case "pt-BR":
             return new IdentificationValidationPtBR();
         default:
-            return null;
+            return {
+                isSSNValid: () => true,
+                isEINValid: () => true,
+            };
     }
 };

@@ -21,6 +21,13 @@ var IdentificationValidationFactory = function IdentificationValidationFactory(l
         case "pt-BR":
             return new _validation2.default();
         default:
-            return null;
+            return {
+                isSSNValid: function isSSNValid() {
+                    return true;
+                },
+                isEINValid: function isEINValid() {
+                    return true;
+                }
+            };
     }
 };
